@@ -9,7 +9,7 @@ public class BankAccount {
     private String phoneNumber;
 
     public BankAccount(){
-
+        this("56789", 2.50, "Default name","Default email","Default phone");
     }
 
     public BankAccount(String number, double balance, String customerName, String email, String phoneNumber){
@@ -69,7 +69,7 @@ public class BankAccount {
     public void withdrawFunds (double amount){
         if (amount <= this.balance){
             this.balance -= amount;
-            System.out.println("You withdrawed " + amount + ". Your account balance is " + this.balance + ".");
+            System.out.println("You withdrew " + amount + ". Your account balance is " + this.balance + ".");
         } else {
             System.out.println("Your account balance is not enough to perform this operation");
         }
