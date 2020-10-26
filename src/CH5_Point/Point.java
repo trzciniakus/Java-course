@@ -36,14 +36,10 @@ public class Point {
     }
 
     public double distance (){
-
-        Point point = new Point(0,0);
-        return this.distance(point);
+        return this.distance(new Point(0,0));
     }
 
     public double distance(int x, int y){
-
-        Point point = new Point(x,y);
-        return this.distance(point);
+        return this.distance(new Point(x,y));
     }
 }
