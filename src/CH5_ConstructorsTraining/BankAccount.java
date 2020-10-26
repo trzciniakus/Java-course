@@ -21,6 +21,10 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this("99999", 100.55, customerName, email, phoneNumber);
+    }
+
     public String getNumber() {
         return number;
     }
