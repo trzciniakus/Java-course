@@ -36,7 +36,7 @@ public class Point {
     }
 
     public double distance (){
-        return this.distance(new Point(0,0));
+        return this.distance(0,0);
     }
 
     public double distance(int x, int y){
