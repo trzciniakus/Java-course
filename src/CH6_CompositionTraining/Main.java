@@ -12,6 +12,6 @@ public class Main {
 
         PC thePC = new PC(theCase,theMonitor,theMotherboard);
 
-        thePC.getMonitor().drawPixelAt(200,500,"green");
+        thePC.powerUp();
     }
 }
