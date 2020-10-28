@@ -73,6 +73,7 @@ class Ferrari extends Car {
         super("Ferrari", 8);
     }
 
+    @Override
     public void accelerate(int speed) {
         if (this.getSpeed() + speed > 250) {
             this.setSpeed(250);
@@ -92,6 +93,7 @@ class Ford extends Car {
         super("Ford", 4);
     }
 
+    @Override
     public void startEngine() {
         if (!this.isEngine()) {
             this.setEngine(true);
@@ -119,6 +121,8 @@ public class Main {
             car.accelerate(300);
             car.brake(200);
             car.brake(200);
+            //System.out.println(car.getClass().getName());
+            //System.out.println(car.getClass().getSimpleName());
         }
 
     }
