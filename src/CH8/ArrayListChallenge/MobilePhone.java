@@ -22,7 +22,6 @@ public class MobilePhone {
 
     public void modifyContact(String currentContactName, String newContactName, int newPhoneNumber) {
         int position = findContactPosition(currentContactName);
-        System.out.println("position "+ position);
         modifyContact(position, newContactName, newPhoneNumber);
     }
 
@@ -33,7 +32,6 @@ public class MobilePhone {
 
     public void removeContact(String contactName) {
         int position = findContactPosition(contactName);
-        System.out.println("position "+ position);
         removeContact(position);
     }
 
@@ -41,10 +39,11 @@ public class MobilePhone {
         contactList.remove(position);
     }
 
+  // comparison does not work
     public int findContactPosition(String contactName) {
         for (int i = 0; i < contactList.size();i++){
             String nameFromList = contactList.get(i).getContactName();
-            if(nameFromList == contactName){
+            if(nameFromList.equals(contactName)){
                 return i;
             }
         }
