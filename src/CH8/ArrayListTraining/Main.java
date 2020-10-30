@@ -11,7 +11,7 @@ public class Main {
     private static GroceryList groceryList = new GroceryList();
 
     public static void main(String[] args) {
-        boolean quit = false;
+        boolean quit = true;
         int choice = 0;
         printInstructions();
         while (quit) {
@@ -41,7 +41,7 @@ public class Main {
                     processArrayList();
                     break;
                 case 7:
-                    quit = true;
+                    quit = false;
                     break;
             }
         }
@@ -52,7 +52,7 @@ public class Main {
         System.out.println("\nPress ");
         System.out.println("\t 0 - choice options");
         System.out.println("\t 1 - print list");
-        System.out.println("\t 2 - modify item");
+        System.out.println("\t 2 - add item");
         System.out.println("\t 3 - modify item");
         System.out.println("\t 4 - remove item");
         System.out.println("\t 5 - search for items");
@@ -61,7 +61,7 @@ public class Main {
     }
 
     public static void addItem() {
-        System.out.print("Enter the grocery item");
+        System.out.print("Enter the grocery item: ");
         groceryList.addGroceryItem(scanner.nextLine());
     }
 
