@@ -39,7 +39,6 @@ public class MobilePhone {
         contactList.remove(position);
     }
 
-  // comparison does not work
     public int findContactPosition(String contactName) {
         for (int i = 0; i < contactList.size();i++){
             String nameFromList = contactList.get(i).getContactName();
