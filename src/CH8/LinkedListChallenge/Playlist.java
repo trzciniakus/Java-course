@@ -32,6 +32,7 @@ public class Playlist {
 
         if (songs.isEmpty()) {
             System.out.println("No songs in the playlist");
+            return;
         } else {
             System.out.println("\nNow playing " + listIterator.next().getName() + "\n");
             printMenu();
